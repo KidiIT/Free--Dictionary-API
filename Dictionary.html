@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary Api project</title>
+  <style>
+    button {
+      background-color: black;
+      padding: 15px 40px;
+      border-radius: 20px;
+      margin: 20px 0;
+      border: none;
+      font-size: 19px;
+      box-shadow: 1px 2px 2px;
+      color: white;
+    }
+
+    input {
+      padding: 10px 50px;
+      border-radius: 20px;
+      font-size: 15px;
+      margin: 20px 10px;
+      color: black;
+      background-color: whitesmoke;
+    }
+
+    body {
+      color: black;
+      font-size: 19px;
+      font-family: sans-serif;
+    }
+
+    form {
+      background-color: rgb(133, 25, 6);
+      padding: 60px;
+      align-items: center;
+      border-radius: 50px 50px;
+
+    }
+
+    .mad {
+      box-shadow: 0px 0px 20px rgb(36, 36, 36);
+
+    }
+
+    .mad {
+      background-color: rgb(133, 25, 6);
+      padding: 60px;
+      border-radius: 60px 60px;
+      align-items: center;
+    }
+
+    .word_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .word_title h3 {
+      margin-right: 40px;
+    }
+
+    .def {
+      padding: 8% 5%;
+    }
+
+    .reduce {
+      font-size: 14px;
+      color: grey;
+    }
+
+    .seemore {
+      background-color: rgb(43, 43, 255);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .define {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- callbacks -->
+  <!-- asynchrous javascript -->
+  <!-- api: Application programming interface -->
+  <div>
+    <form id="dictionary_form">
+      <center>
+        <div style="border:1px solid black;  height: 420px; width: 70%;" class="mad">
+          <h1>DICTIONARY API WITH JAVASCRIPT</h1>
+          <div>
+            <p><br><br>
+              <label><strong>Search content</strong></label>
+              <input type="search" id="search" name="search"><br>
+            </p>
+          </div>
+
+          <button>submit</button>
+
+
+        </div>
+
+      </center>
+    </form>
+    <div data-displayContainer>
+    </div>
+    <template data-searchContainer>
+      <div class="def" >
+        <div>
+          <div class="word_title" >
+            <h2 data-title>Word </h2><span style="cursor: pointer;"><img src="speak.svg" data-speakClick><audio controls autoplay data-speak style="display: none;"><source src="https://api.dictionaryapi.dev/media/pronunciations/en/word-us.mp3"></audio></span>
+          </div>
+          <h5 data-pronouncation>prouncation:[word]</h5>
+        </div>
+        <div>
+          <h6><span style="background: grey;padding: 8px;" data-partOfSpeech>noun</span></h6>
+            <div data-define>
+
+            </div>
+            <template data-definitionTemplate>
+              <div>
+                <h3>Definitions:</h3>
+               
+                <div class="define" data-definition >
+                  <div>
+                    <span>2.</span><span>a word is a word</span>
+                  </div>
+                  <span>eg: <i class="reduce" >"i spoke a word today"</i></span>
+                </div>
+              </div>
+            </template>
+          <div>
+            <center><span class="seemore" data-seemore>see more</span></center>
+          </div>
+        </div> 
+  
+      </div>
+    </template>  </div>
+  <script src="Dictionary.js"></script>
+</body>
+</html>
