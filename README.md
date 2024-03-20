@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10829824.svg)](https://doi.org/10.5281/zenodo.10829824)
 ## Free Dictionary API
 
 I came across an inspiring free Dictionary API created. however, with my initiative i was able to build a Dictionary APl that can be used at your comfort zone.
